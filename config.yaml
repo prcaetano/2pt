@@ -1,0 +1,22 @@
+input:
+    input_path: /home/drc01/sobreira/pcaetano/projetos/desi-bao-recon/jobs/Stage1/TestUnitSingleBox/
+    galaxy_catalog: data_rec.xyzw
+    random_catalog: rand_rec.xyzw
+
+output:
+    output_path: /home/drc01/sobreira/pcaetano/projetos/desi-bao-recon/jobs/Stage1/TestUnitSingleBox/
+    output_name_pk: data_rec_pk.txt
+    output_name_pk_l: data_rec_pk_l.txt
+    output_name_xi: data_rec_xi.txt
+    output_name_xi_l: data_rec_xi_l.txt
+
+simulation_config:
+    BoxSize: 1000
+
+xi_config:
+    Nbins: 40
+    Rmax: 200
+    binning: linear
+    Nmu: 120
+    nthreads: 12
+

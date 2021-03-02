@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -M pcaetano@ifi.unicamp.br
+#PBS -m abe
+#PBS -N xi
+#PBS -q par12
+##PBS -q serial
+#PBS -l select=1:ncpus=12
+#PBS -l place=scatter:exclhost
+#PBS -k oe
+
+. /home/drc01/sobreira/pcaetano/.bashrc
+
+conda activate desi-bao-fit
+cd /home/drc01/sobreira/pcaetano/projetos/desi-bao/code/2pt
+#mpirun -np 12 python xi.py config.yaml
+python xi.py config.yaml
